@@ -10,6 +10,8 @@ import { PendientesComponent } from '../pages/pendientes/pendientes.component';
 import { TerminadosComponent } from '../pages/terminados/terminados.component';
 import { TabsPage } from '../pages/tabs/tabs';
 
+// servicios
+import { ListaDeseosService } from './services/lista-deseos.services';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { TabsPage } from '../pages/tabs/tabs';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ListaDeseosService
   ]
 })
 export class AppModule {}
