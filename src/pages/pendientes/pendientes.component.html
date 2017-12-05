@@ -22,20 +22,12 @@
           <ion-icon *ngIf="!item.completado" ios="ios-checkmark-circle" md="md-checkmark-circle"></ion-icon>
           {{ item.nombre }}
         </ion-item>
-        <ion-item>
-          <ion-icon ios="ios-checkmark-circle" md="md-checkmark-circle"></ion-icon>
-          Tetris
-        </ion-item>
-        <ion-item>
-          <ion-icon ios="ios-checkmark-circle" md="md-checkmark-circle"></ion-icon>
-          Tetris
-        </ion-item>
       </ion-list>
     </ion-card-content>
   </ion-card>
 
   <ion-fab right bottom>
-    <button ion-fab color="primary">
+    <button ion-fab color="primary" (click)="irAAgregar()">
       <ion-icon ios="ios-add" md="md-add"></ion-icon>
     </button>
   </ion-fab>
